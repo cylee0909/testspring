@@ -9,10 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-
         TestJdbcTemplate testJdbcTemplate =
                 (TestJdbcTemplate) context.getBean("testJDBCTemplate");
-
 //        System.out.println("------Records Creation--------" );
 //        testJdbcTemplate.create("Zara", 11);
 //        testJdbcTemplate.create("Nuha", 2);
